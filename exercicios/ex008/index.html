@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+<body>
+    <h1>Exercicios com JS usando if/else</h1>
+    <script>
+        let idade = prompt("Digite sua idade")
+        idade = Number(idade)
+        if (idade < 13){
+            console.log("Criança")
+        }
+        else if (idade <= 17 && idade > 13){
+            console.log("Adolescente")
+        }
+        else if (idade <= 64 && idade >= 18){
+            console.log("Adulto")
+        }
+        else if(idade > 65){
+            console.log("Idoso")
+        }
+        let numeroCerto = Number(3)
+        let tentativa = prompt("Advinhe o número 1-5")
+        tentativa = Number(tentativa)
+        switch (tentativa){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                if (tentativa == numeroCerto){
+                    console.log("Parabéns! Você acertou");
+                }
+                else{
+                    console.log("Boa tentativa! O número certo era " + numeroCerto);
+                }
+                break;
+                default:
+                    console.log("Digite um número entre 1-5!")
+        }
+        let nota = prompt("Digite a nota do aluno")
+        nota = Number(nota)
+        switch(true){
+        case (nota > 1 && nota < 6):
+            console.log("Reprovado");
+            break;
+        case (nota >= 6 && nota <= 7):
+            console.log("Recuperação");
+            break;
+        case (nota > 7):
+            console.log("Aprovado");
+            break;
+        }
+            
+    </script>
+</body>
+</html>

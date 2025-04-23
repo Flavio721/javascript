@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+<body>
+    <h1>Exercicios JS usando loops</h1>
+    <script>
+        for (let i = 0; i < 11; i++){
+            console.log(i)
+        }
+        for (let l = 0; l < 20; l++){
+            if (l % 2 == 0){
+                console.log(l)
+            }
+            else{
+                continue
+            }
+        }
+        let j = 0; while(j < 10){
+            console.log(j)
+            j++
+        }
+        for (let lu = 0; lu < 100; lu++){
+            console.log(lu)
+            if (lu >= 50){
+                break
+            }
+            else{
+                continue
+            }
+        }
+        for (let li = 0; li < 20; li++){
+            if (li == 13){
+                continue
+            }
+            console.log(li)
+        }
+        let nomes = ["Flávio", "Luiza", "Julia", "Livia", "Aline"]
+        for (let nome of nomes){
+            console.log(nome)
+        }
+    </script>
+</body>
+</html>
